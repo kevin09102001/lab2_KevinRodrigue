@@ -317,6 +317,8 @@ public class Lab2__Kevinrodriguez {
                         if (((registro)regiscrimen.get(3)).getResultado().equals("Resuelto")) {
                              mostrar+="\nPocicion: "+regiscrimen.indexOf(a)+"\n"+a+"\n";
                              System.out.println(mostrar);
+                        }else{
+                            
                         }
                        }
                     }else{
@@ -325,7 +327,22 @@ public class Lab2__Kevinrodriguez {
                     
                 }
                     break;
-                case 9:
+                case 9:{
+                    String mostrar="";
+                    if (regiscrimen.size()>=1) {
+                        for (Object a : regiscrimen) {
+                        if (((registro)regiscrimen.get(3)).getResultado().equals("En proceso")) {
+                             mostrar+="\nPocicion: "+regiscrimen.indexOf(a)+"\n"+a+"\n";
+                             System.out.println(mostrar);
+                        }else{
+                            
+                        }
+                       }
+                    }else{
+                        System.out.println("No hay crimenes");
+                    }
+                    
+                }
                     break;
             }
         }
