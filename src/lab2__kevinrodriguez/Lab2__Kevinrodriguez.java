@@ -27,7 +27,7 @@ public class Lab2__Kevinrodriguez {
         ArrayList ep=new ArrayList();
        char resp='s';
        String opc;
-        while(resp=='s'){
+        while(resp=='s'|| resp=='S'){
             System.out.println("1- Agregar detectives\n" +
                                 "2- Eliminar detectives.\n" +
                                 "3- Modificar Detectives\n" +
@@ -318,13 +318,12 @@ public class Lab2__Kevinrodriguez {
                              mostrar+="\nPocicion: "+regiscrimen.indexOf(a)+"\n"+a+"\n";
                              System.out.println(mostrar);
                         }else{
-                            
+                            mostrar+="";
                         }
                        }
                     }else{
                         System.out.println("No hay crimenes");
                     }
-                    
                 }
                     break;
                 case 9:{
@@ -345,6 +344,8 @@ public class Lab2__Kevinrodriguez {
                 }
                     break;
             }
+             System.out.println("Desea agregar otra [S/N]");
+            resp=leer.next().charAt(0);
         }
     }
     
